@@ -1,0 +1,59 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.header, .hero-section {
+    background-color: #1F2937;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    flex-basis: 3em;
+    align-items: center;
+    gap: 1.5em;
+}
+
+.hero-section.hero-flex {
+    flex-flow: row wrap;
+}
+
+.header-logo {
+    font-size: 1.5em;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.header-links {
+    display: flex;
+    gap: 1.5em;
+    flex-shrink: 0;
+}
+
+.hero-main {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+.hero-main div {
+    font-size: 3em;
+    padding-right: 3em;
+}
+
+.hero-main p {
+    font-size: 18px;
+    margin-top: 0px;
+}
+
+.hero-main button {
+    max-width: 100px;
+    padding: 5px;
+}
