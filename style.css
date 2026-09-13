@@ -9,14 +9,24 @@ body {
     margin: 0px;
 }
 
-.header, .hero-section {
+.head-hero {
+    display: flex;
+    flex-direction: column;
     background-color: #1F2937;
     color: white;
+}
+
+.header, .hero-section {
     display: flex;
-    justify-content: space-around;
-    flex-basis: 3em;
     align-items: center;
     gap: 1.5em;
+    width: 100%;
+    max-width: 1375px;
+    margin-inline: auto;
+}
+
+.header {
+    flex-basis: 40px;
 }
 
 #hero-flex {
@@ -25,7 +35,7 @@ body {
 
 .header-logo {
     font-size: 1.5em;
-    white-space: nowrap;
+    margin-right: auto;
 }
 
 .header-links {
@@ -33,6 +43,12 @@ body {
     gap: 1.5em;
     flex-shrink: 0;
     align-items: center;
+    margin-left: auto;
+}
+
+.no-wrap-text {
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .hero-main {
@@ -41,6 +57,7 @@ body {
     width: 500px;
     margin-top: 3em;
     margin-bottom: 3em;
+    margin: 3em auto 3em auto;
 }
 
 .hero-main div {
@@ -53,8 +70,11 @@ body {
     margin-top: 0px;
 }
 
-.hero-main img {
-    
+.hero-section img {
+    border: 2px solid white;
+    width: 500px;
+    height: 241px;
+    margin: auto auto 3em auto;
 }
 
 .hero-main button {
@@ -99,4 +119,69 @@ body {
     border: 3px solid skyblue;
     border-radius: 15px;
     margin-bottom: 10px;
+}
+
+.quote-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E5E7EB;
+    flex-basis: 341px;
+
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 700px;
+}
+
+.quote p {
+    font-size: 36px;
+    color: #1F2937;
+    text-align: left;
+    margin: 0px auto;
+}
+
+.quote div {
+    margin-left: auto;
+    font-weight: 900;
+    font-size: 1.5em;
+}
+
+.sign-up-section {
+    display: flex;
+    align-items: center;
+    flex-basis: 341px;
+}
+
+#signup-cont {
+    display: flex;
+    margin: auto;
+    background-color: blue;
+    max-width: 1200px;
+    flex-grow: 1;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.text-cont {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-cont div {
+    color: white;
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F2937;
+    flex: 1 0 40px;
+    color: white;
 }
